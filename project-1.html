@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaxinSights Optics Intern | Weihao Han</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link">About Me</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    <header class="header">
+      <h1 class="name">MaxinSights · Optics Intern</h1>
+      <p class="subtitle">High-Precision Frustum Simulation Platform & Fisheye Lens Calibration · 2026.04 – Present</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Overview</h2>
+      <p class="about-text">
+        Built a high-precision frustum simulation platform using the UE5 engine, completing 3D device model integration, MetaHuman skeletal rigging, and motion driving, achieving full-field optical sampling and accurate FOV reproduction under multi-camera arrays. This resolved the traditional mismatch between light cone coverage and human motion in simulations. Calibrated company-selected fisheye lenses using a dual-spherical distortion model, reducing reprojection error to within 0.5 pixels. Implemented a UE5-based restoration pipeline that faithfully reproduces lens distortion based on calibrated parameters, providing critical data support for lens optimization and improved 3D reconstruction accuracy. Additionally, analyzed and traced root causes of imaging anomalies encountered during device calibration.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Visual Showcase</h2>
+
+      <div class="media-category">
+        <h3 class="media-category-title">Frustum Simulation</h3>
+
+        <div class="media-subsection">
+          <h4 class="media-subsection-title">FOV Rectangular Frustum</h4>
+          <div class="media-grid">
+            <img src="数据/FOV方锥/方锥-侧视.png" alt="Rectangular Frustum – Side View" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="数据/FOV方锥/方锥-顶视.png" alt="Rectangular Frustum – Top View" loading="lazy" onclick="openLightbox(this.src)">
+          </div>
+          <div class="media-grid">
+            <img src="数据/FOV方锥/方锥仿真.png" alt="Rectangular Frustum Simulation" loading="lazy" onclick="openLightbox(this.src)">
+          </div>
+          <div class="media-grid">
+            <video src="数据/FOV方锥/方锥骨骼绑定.mp4" controls preload="metadata"></video>
+          </div>
+        </div>
+
+        <div class="media-subsection">
+          <h4 class="media-subsection-title">Wide FOV Conical Frustum</h4>
+          <div class="media-grid col-3">
+            <img src="数据/大FOV圆锥/前视-正视角.png" alt="Conical Frustum – Front View" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="数据/大FOV圆锥/前视+侧视.png" alt="Conical Frustum – Front + Side" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="数据/大FOV圆锥/前视-俯视角.png" alt="Conical Frustum – Top-Down" loading="lazy" onclick="openLightbox(this.src)">
+          </div>
+          <div class="media-grid">
+            <img src="数据/大FOV圆锥/前世-侧式角.png" alt="Conical Frustum – Side Angle" loading="lazy" onclick="openLightbox(this.src)">
+            <img src="数据/大FOV圆锥/前世-后视角.png" alt="Conical Frustum – Rear View" loading="lazy" onclick="openLightbox(this.src)">
+          </div>
+          <div class="media-grid">
+            <video src="数据/大FOV圆锥/光锥骨骼跟随.mp4" controls preload="metadata"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-category">
+        <h3 class="media-category-title">Fisheye Lens Distortion</h3>
+        <div class="media-grid">
+          <video src="数据/鱼眼镜头畸变/前视.mp4" controls preload="metadata"></video>
+          <video src="数据/鱼眼镜头畸变/侧视.mp4" controls preload="metadata"></video>
+        </div>
+        <div class="media-grid">
+          <video src="数据/鱼眼镜头畸变/下视.mp4" controls preload="metadata"></video>
+          <video src="数据/鱼眼镜头畸变/畸变还原.mp4" controls preload="metadata"></video>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Weihao Han. All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
