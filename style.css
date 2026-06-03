@@ -271,8 +271,13 @@ body {
 }
 
 .project-item {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   position: relative;
+  padding: 20px 18px;
+  margin-left: -18px;
+  margin-right: -18px;
+  border-radius: 4px;
+  transition: background var(--transition);
 }
 
 .project-item:last-child {
@@ -343,11 +348,10 @@ body {
   color: inherit;
   display: block;
   cursor: pointer;
-  transition: opacity var(--transition);
 }
 
-.project-item-link:hover {
-  opacity: 0.85;
+.project-item-link:hover .project-item {
+  background: var(--tag-bg);
 }
 
 .media-placeholder {
@@ -449,6 +453,10 @@ body {
 
 .project-item-no-link:hover {
   opacity: 0.6;
+}
+
+.project-item-no-link:hover .project-item {
+  background: transparent;
 }
 
 .lightbox {
@@ -623,5 +631,11 @@ body {
 
   .media-grid.col-3 {
     grid-template-columns: 1fr;
+  }
+
+  .project-item {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding: 16px 12px;
   }
 }
