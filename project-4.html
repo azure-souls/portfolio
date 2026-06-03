@@ -38,21 +38,34 @@
     <section class="section">
       <h2 class="section-title">Visual Showcase</h2>
 
-      <div class="media-placeholder">
-        <p>📷 Image Showcase</p>
-        <p class="media-hint">Add hardware PCB photos, Zigbee network topology diagrams, and system prototypes here</p>
+      <div class="media-grid">
+        <img src="数据/开窗器/1.jpg" alt="Window Opener" loading="lazy" onclick="openLightbox(this.src)">
+        <img src="数据/开窗器/长电机.jpg" alt="Long Motor" loading="lazy" onclick="openLightbox(this.src)">
       </div>
-
-      <div class="media-placeholder">
-        <p>🎬 Video Showcase</p>
-        <p class="media-hint">Add multi-window synchronized switching demonstrations and remote control videos here</p>
+      <div class="media-grid">
+        <video src="数据/开窗器/双电机.mp4" controls preload="none" muted></video>
       </div>
     </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="">
+    </div>
 
     <footer class="footer">
       <p>&copy; 2026 Weihao Han. All Rights Reserved.</p>
     </footer>
 
   </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+  </script>
 </body>
 </html>
