@@ -351,7 +351,7 @@ body {
 }
 
 .project-item-link:hover .project-item {
-  background: var(--tag-bg);
+  background: #e8f0fe;
 }
 
 .media-placeholder {
@@ -532,16 +532,10 @@ body {
   display: inline-block;
   font-size: 13px;
   font-weight: 500;
-  color: var(--tag-text);
+  color: var(--text-primary);
   background: var(--tag-bg);
   padding: 5px 15px;
   border-radius: 4px;
-  transition: background var(--transition), color var(--transition);
-}
-
-.skill-tag:hover {
-  background: var(--accent);
-  color: #fff;
 }
 
 .eval-list {
