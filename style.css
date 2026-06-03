@@ -147,6 +147,23 @@ body {
   flex-shrink: 0;
 }
 
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.cv-link:hover {
+  color: var(--text-primary);
+}
+
+.cv-icon {
+  flex-shrink: 0;
+}
+
 .section {
   margin-bottom: 52px;
 }
