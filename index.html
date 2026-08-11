@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weihao Han | Homepage</title>
+  <title data-i18n="index.title">韩惟皓 | 个人主页</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,24 +13,25 @@
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link active">About Me</a>
-      <a href="education.html" class="nav-link">Education</a>
-      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html" class="nav-link active" data-i18n="nav.about">关于我</a>
+      <a href="education.html" class="nav-link" data-i18n="nav.education">教育经历</a>
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">项目经历</a>
+      <button id="lang-toggle" onclick="toggleLang()" class="lang-toggle">EN</button>
     </div>
   </nav>
 
   <div class="container">
 
     <header class="header">
-      <h1 class="name">Weihao Han | 韩惟皓</h1>
-      <p class="subtitle">M.Eng. in Optical Engineering · Optics Intern</p>
+      <h1 class="name" data-i18n="header.name">韩惟皓 | Weihao Han</h1>
+      <p class="subtitle" data-i18n="header.subtitle">光学工程工学硕士 · 光学实习生</p>
       <div class="contact">
-        <span class="contact-item">📧 <a href="mailto:2411111002@post.usts.edu.cn">2411111002@post.usts.edu.cn</a></span>
+        <span class="contact-item"><a href="mailto:2411111002@post.usts.edu.cn" data-i18n="header.email">📧 2411111002@post.usts.edu.cn</a></span>
         <span class="contact-divider">|</span>
         <span class="contact-item">
           <a href="韩惟皓申博简历.pdf" target="_blank" class="cv-link">
             <svg class="cv-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            CV
+            <span data-i18n="header.cv">简历</span>
           </a>
         </span>
         <span class="contact-divider">|</span>
@@ -44,64 +45,64 @@
     </header>
 
     <section class="section" id="about">
-      <h2 class="section-title">About</h2>
-      <p class="about-text">
-        I am Weihao Han, currently pursuing an M.Eng. in Optical Engineering at Suzhou University of Science and Technology and working as an Optics Intern at Maxinsights. My research interests lie in intelligent human-computer interaction, multimodal perception fusion, and digital twins. I am particularly passionate about integrating optical simulation and 3D vision technologies with flexible electronic sensors to advance visual-tactile fusion perception.
+      <h2 class="section-title" data-i18n="index.about">关于我</h2>
+      <p class="about-text" data-i18n="index.about.text">
+        我是韩惟皓，现于苏州科技大学攻读光学工程工学硕士学位，并在 Maxinsights 担任光学实习生。研究方向为智能人机交互、多模态感知融合与数字孪生，对将光学仿真和三维视觉技术与柔性电子传感器相结合以实现视觉-触觉融合感知尤感兴趣。
       </p>
       <div class="personal-info">
         <div class="info-row">
-          <span class="info-label">Date of Birth</span>
-          <span class="info-value">October 2000</span>
+          <span class="info-label" data-i18n="index.dob">出生日期</span>
+          <span class="info-value" data-i18n="index.dob.val">2000年10月</span>
         </div>
         <div class="info-row">
-          <span class="info-label">Membership</span>
-          <span class="info-value">CYL Member</span>
+          <span class="info-label" data-i18n="index.member">政治面貌</span>
+          <span class="info-value" data-i18n="index.member.val">共青团员</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="research">
-      <h2 class="section-title">Research Interests</h2>
+      <h2 class="section-title" data-i18n="index.research">研究方向</h2>
       <div class="research-grid">
         <div class="research-card">
-          <h3>Multimodal Fusion Perception</h3>
-          <p>Exploring synergistic perception and fusion of visual, tactile, and other multimodal information</p>
+          <h3 data-i18n="index.r1.title">多模态融合感知</h3>
+          <p data-i18n="index.r1.desc">探索视觉、触觉等多模态信息的协同感知与融合</p>
         </div>
         <div class="research-card">
-          <h3>Digital Twin & Optical Simulation</h3>
-          <p>High-fidelity optical system simulation and digital twin modeling based on UE5 and Zemax</p>
+          <h3 data-i18n="index.r2.title">数字孪生与光学仿真</h3>
+          <p data-i18n="index.r2.desc">基于 UE5 和 Zemax 的高保真光学系统仿真与数字孪生建模</p>
         </div>
         <div class="research-card">
-          <h3>Computer Vision</h3>
-          <p>Object detection, semantic segmentation, camera calibration, and distortion correction algorithms</p>
+          <h3 data-i18n="index.r3.title">计算机视觉</h3>
+          <p data-i18n="index.r3.desc">目标检测、语义分割、相机标定与畸变校正算法</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="skills">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title" data-i18n="index.skills">技能</h2>
       <div class="skills-group">
         <div class="skill-category">
-          <h3 class="skill-cat-title">Multimodal Perception & Optical Simulation</h3>
+          <h3 class="skill-cat-title" data-i18n="index.skills.cat1">多模态感知与光学仿真</h3>
           <div class="skill-tags">
-            <a href="project-1.html" class="skill-tag">UE5 Frustum Simulation</a>
-            <a href="project-1.html" class="skill-tag">Zemax Optical Design</a>
-            <a href="project-1.html" class="skill-tag">ToF Camera Calibration</a>
-            <a href="project-3.html" class="skill-tag">Hand-Eye Calibration</a>
-            <a href="project-1.html" class="skill-tag">Distortion Correction</a>
+            <a href="project-1.html" class="skill-tag" data-i18n="index.skills.tag.ue5">UE5 视锥仿真</a>
+            <a href="project-1.html" class="skill-tag" data-i18n="index.skills.tag.zemax">Zemax 光学设计</a>
+            <a href="project-1.html" class="skill-tag" data-i18n="index.skills.tag.tof">ToF 相机标定</a>
+            <a href="project-3.html" class="skill-tag" data-i18n="index.skills.tag.handeye">手眼标定</a>
+            <a href="project-1.html" class="skill-tag" data-i18n="index.skills.tag.distortion">畸变校正</a>
           </div>
         </div>
         <div class="skill-category">
-          <h3 class="skill-cat-title">Computer Vision</h3>
+          <h3 class="skill-cat-title" data-i18n="index.skills.cat2">计算机视觉</h3>
           <div class="skill-tags">
-            <a href="project-2.html" class="skill-tag">YOLO Object Detection</a>
-            <a href="project-3.html" class="skill-tag">OpenCV Image Processing</a>
-            <a href="project-2.html" class="skill-tag">Semantic Segmentation</a>
-            <a href="project-2.html" class="skill-tag">Dataset Annotation</a>
+            <a href="project-2.html" class="skill-tag" data-i18n="index.skills.tag.yolo">YOLO 目标检测</a>
+            <a href="project-3.html" class="skill-tag" data-i18n="index.skills.tag.opencv">OpenCV 图像处理</a>
+            <a href="project-2.html" class="skill-tag" data-i18n="index.skills.tag.seg">语义分割</a>
+            <a href="project-2.html" class="skill-tag" data-i18n="index.skills.tag.annot">数据集标注</a>
           </div>
         </div>
         <div class="skill-category skill-category-no-link">
-          <h3 class="skill-cat-title">Programming & Tools</h3>
+          <h3 class="skill-cat-title" data-i18n="index.skills.cat3">编程与工具</h3>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">UE5</span>
@@ -117,20 +118,22 @@
     </section>
 
     <section class="section" id="evaluation">
-      <h2 class="section-title">Personal Statement</h2>
+      <h2 class="section-title" data-i18n="index.statement">自我评价</h2>
       <ul class="eval-list">
-        <li>Possess strong logical thinking and effective communication skills, with a well-balanced mindset bridging theory and practice.</li>
-        <li>Demonstrate strong execution capability and a high sense of responsibility, adept at organizing and collaborating within teams.</li>
-        <li>Optimistic and open-minded by nature, always eager to embrace new challenges, with proven resilience under pressure.</li>
-        <li>Continuously follow the latest academic advances in intelligent human-computer interaction and multimodal perception fusion.</li>
+        <li data-i18n="index.eval.1">具备较强的逻辑思维能力和良好的沟通表达能力，理论与实践并重，思维均衡。</li>
+        <li data-i18n="index.eval.2">执行能力强，具有高度的责任感，善于团队协作与统筹安排。</li>
+        <li data-i18n="index.eval.3">性格乐观豁达，始终保持迎接新挑战的热情，抗压能力突出。</li>
+        <li data-i18n="index.eval.4">持续关注智能人机交互、多模态感知融合等领域的前沿进展。</li>
       </ul>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2026 Weihao Han. All Rights Reserved.</p>
-      <p class="footer-update">Last updated: June 2026</p>
+      <p data-i18n="footer.copyright">© 2026 韩惟皓 版权所有</p>
+      <p class="footer-update" data-i18n="footer.updated">最后更新：2026年6月</p>
     </footer>
 
   </div>
+
+  <script src="i18n.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hand Acupoint Robot | Weihao Han</title>
+  <title data-i18n="p3.title">手部腧穴机器人 | 韩惟皓</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,30 +13,31 @@
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link">About Me</a>
-      <a href="education.html" class="nav-link">Education</a>
-      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html" class="nav-link" data-i18n="nav.about">关于我</a>
+      <a href="education.html" class="nav-link" data-i18n="nav.education">教育经历</a>
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">项目经历</a>
+      <button id="lang-toggle" onclick="toggleLang()" class="lang-toggle">EN</button>
     </div>
   </nav>
 
   <div class="container">
 
-    <a href="projects.html" class="back-link">← Back to Projects</a>
+    <a href="projects.html" class="back-link" data-i18n="back.projects">← 返回项目</a>
 
     <header class="header">
-      <h1 class="name">Hand Acupoint Robot</h1>
-      <p class="subtitle">2024</p>
+      <h1 class="name" data-i18n="p3.heading">手部腧穴机器人</h1>
+      <p class="subtitle" data-i18n="p3.subtitle">2024</p>
     </header>
 
     <section class="section">
-      <h2 class="section-title">Overview</h2>
-      <p class="about-text">
-        Collaborated with professional TCM practitioners at the Acupuncture Department of Shanghai Seventh People's Hospital to construct a specialized dataset of over 6,000 hand acupoint images. Improved a lightweight YOLO model and trained it on the dataset, achieving a precision of 0.99. Designed an integrated hand-eye calibration board based on ArUco markers, serving simultaneously for perspective transformation in image acquisition and hand-eye calibration, enabling robotic arm calibration that meets the clinical requirements for acupuncture robots.
+      <h2 class="section-title" data-i18n="p3.overview">概述</h2>
+      <p class="about-text" data-i18n="p3.overview.text">
+        与上海第七人民医院针灸科专业中医师协作，构建了超过 6000 张手部穴位图像的专业数据集。改进轻量级 YOLO 模型并在该数据集上训练，精度达到 0.99。设计了基于 ArUco 标记的一体化手眼标定板，可同时用于图像采集中的透视变换和手眼标定，实现满足腧穴机器人临床需求的机械臂标定。
       </p>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Visual Showcase</h2>
+      <h2 class="section-title" data-i18n="p3.showcase">成果展示</h2>
 
       <div class="media-grid">
         <img src="数据/腧穴/手部穴位.png" alt="Hand Acupoints" loading="lazy" onclick="openLightbox(this.src)">
@@ -50,7 +51,7 @@
     </div>
 
     <footer class="footer">
-      <p>&copy; 2026 Weihao Han. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 韩惟皓 版权所有</p>
     </footer>
 
   </div>
@@ -64,5 +65,6 @@
       document.getElementById('lightbox').classList.remove('active');
     }
   </script>
+  <script src="i18n.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maxinsights Optics Intern | Weihao Han</title>
+  <title data-i18n="p1.title">Maxinsights 光学实习生 | 韩惟皓</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +13,37 @@
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link">About Me</a>
-      <a href="education.html" class="nav-link">Education</a>
-      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html" class="nav-link" data-i18n="nav.about">关于我</a>
+      <a href="education.html" class="nav-link" data-i18n="nav.education">教育经历</a>
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">项目经历</a>
+      <button id="lang-toggle" onclick="toggleLang()" class="lang-toggle">EN</button>
     </div>
   </nav>
 
   <div class="container">
 
-    <a href="projects.html" class="back-link">← Back to Projects</a>
+    <a href="projects.html" class="back-link" data-i18n="back.projects">← 返回项目</a>
 
     <header class="header">
-      <h1 class="name">Maxinsights · Optics Intern</h1>
-      <p class="subtitle">High-Precision Frustum Simulation Platform & Fisheye Lens Calibration · 2026.04 – Present</p>
+      <h1 class="name" data-i18n="p1.heading">Maxinsights · 光学实习生</h1>
+      <p class="subtitle" data-i18n="p1.subtitle">高精度视锥仿真平台与鱼眼镜头标定 · 2026.04 – 至今</p>
     </header>
 
     <section class="section">
-      <h2 class="section-title">Overview</h2>
-      <p class="about-text">
-        Built a high-precision frustum simulation platform using the UE5 engine, completing 3D device model integration, MetaHuman skeletal rigging, and motion driving, achieving full-field optical sampling and accurate FOV reproduction under multi-camera arrays. This resolved the traditional mismatch between light cone coverage and human motion in simulations. Calibrated company-selected fisheye lenses using a dual-spherical distortion model, reducing reprojection error to within 0.5 pixels. Implemented a UE5-based restoration pipeline that faithfully reproduces lens distortion based on calibrated parameters, providing critical data support for lens optimization and improved 3D reconstruction accuracy. Additionally, analyzed and traced root causes of imaging anomalies encountered during device calibration.
+      <h2 class="section-title" data-i18n="p1.overview">概述</h2>
+      <p class="about-text" data-i18n="p1.overview.text">
+        基于 UE5 引擎构建高精度视锥仿真平台，完成三维设备模型集成、MetaHuman 骨骼绑定与运动驱动，实现了多相机阵列下的全场光学采样和准确 FOV 复现，解决了传统仿真中光锥覆盖范围与人体运动的不匹配问题。采用双球面畸变模型对公司选定的鱼眼镜头进行标定，将重投影误差降至 0.5 像素以内；并在 UE5 中搭建基于标定参数的畸变还原管线，实现了镜头畸变的真实复现，为镜头优化与三维重建精度提升提供了关键数据支撑。此外，还分析并追溯了设备标定过程中遇到的成像异常根源。
       </p>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Visual Showcase</h2>
+      <h2 class="section-title" data-i18n="p1.showcase">成果展示</h2>
 
       <div class="media-category">
-        <h3 class="media-category-title">Frustum Simulation</h3>
+        <h3 class="media-category-title" data-i18n="p1.sec1">视锥仿真</h3>
 
         <div class="media-subsection">
-          <h4 class="media-subsection-title">FOV Rectangular Frustum</h4>
+          <h4 class="media-subsection-title" data-i18n="p1.sec1.sub1">FOV 方锥</h4>
           <div class="media-grid">
             <img src="数据/FOV方锥/方锥-侧视.png" alt="Rectangular Frustum – Side View" loading="lazy" onclick="openLightbox(this.src)">
             <img src="数据/FOV方锥/方锥-顶视.png" alt="Rectangular Frustum – Top View" loading="lazy" onclick="openLightbox(this.src)">
@@ -56,7 +57,7 @@
         </div>
 
         <div class="media-subsection">
-          <h4 class="media-subsection-title">Wide FOV Conical Frustum</h4>
+          <h4 class="media-subsection-title" data-i18n="p1.sec1.sub2">大 FOV 圆锥</h4>
           <div class="media-grid col-3">
             <img src="数据/大FOV圆锥/前视-正视角.png" alt="Conical Frustum – Front View" loading="lazy" onclick="openLightbox(this.src)">
             <img src="数据/大FOV圆锥/前视侧视.png" alt="Conical Frustum – Front + Side" loading="lazy" onclick="openLightbox(this.src)">
@@ -73,7 +74,7 @@
       </div>
 
       <div class="media-category">
-        <h3 class="media-category-title">Fisheye Lens Distortion</h3>
+        <h3 class="media-category-title" data-i18n="p1.sec2">鱼眼镜头畸变</h3>
         <div class="media-grid">
           <video src="数据/鱼眼镜头畸变/前视.mp4" controls preload="none" muted></video>
           <video src="数据/鱼眼镜头畸变/侧视.mp4" controls preload="none" muted></video>
@@ -91,7 +92,7 @@
     </div>
 
     <footer class="footer">
-      <p>&copy; 2026 Weihao Han. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 韩惟皓 版权所有</p>
     </footer>
 
   </div>
@@ -105,5 +106,6 @@
       document.getElementById('lightbox').classList.remove('active');
     }
   </script>
+  <script src="i18n.js"></script>
 </body>
 </html>

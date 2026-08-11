@@ -53,6 +53,30 @@ body {
   justify-content: center;
   gap: 40px;
   height: 52px;
+  position: relative;
+}
+
+.lang-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: all var(--transition);
+}
+
+.lang-toggle:hover {
+  background: var(--border);
+  color: var(--text-primary);
 }
 
 .nav-link {
@@ -662,5 +686,13 @@ a.skill-tag:hover {
     margin-left: -12px;
     margin-right: -12px;
     padding: 16px 12px;
+  }
+
+  .lang-toggle {
+    position: static;
+    transform: none;
+    margin-top: 8px;
+    font-size: 12px;
+    padding: 4px 14px;
   }
 }

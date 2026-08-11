@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research on Visually Impaired Assistance Algorithms Based on CARLA | Weihao Han</title>
+  <title data-i18n="p2.title">基于 CARLA 的视障辅助算法研究 | 韩惟皓</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,33 +13,34 @@
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-link">About Me</a>
-      <a href="education.html" class="nav-link">Education</a>
-      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="index.html" class="nav-link" data-i18n="nav.about">关于我</a>
+      <a href="education.html" class="nav-link" data-i18n="nav.education">教育经历</a>
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">项目经历</a>
+      <button id="lang-toggle" onclick="toggleLang()" class="lang-toggle">EN</button>
     </div>
   </nav>
 
   <div class="container">
 
-    <a href="projects.html" class="back-link">← Back to Projects</a>
+    <a href="projects.html" class="back-link" data-i18n="back.projects">← 返回项目</a>
 
     <header class="header">
-      <h1 class="name">Research on Visually Impaired Assistance Algorithms Based on CARLA</h1>
-      <p class="subtitle">2025</p>
+      <h1 class="name" data-i18n="p2.heading">基于 CARLA 的视障辅助算法研究</h1>
+      <p class="subtitle" data-i18n="p2.subtitle">2025</p>
     </header>
 
     <section class="section">
-      <h2 class="section-title">Overview</h2>
-      <p class="about-text">
-        Constructed a complex traffic scene dataset incorporating diverse weather conditions and obstacle configurations using the Carla simulation platform. Deployed cameras to collect and annotate driving data. Enhanced the YOLOv11n lightweight object detection model and developed a visual semantic segmentation-based curb detection algorithm, enabling real-time safe-path planning and autonomous obstacle avoidance for visually impaired users in complex environments. This work provides a technical solution for environmental perception in intelligent mobile robots.
+      <h2 class="section-title" data-i18n="p2.overview">概述</h2>
+      <p class="about-text" data-i18n="p2.overview.text">
+        使用 Carla 仿真平台构建了包含多种天气条件和障碍物配置的复杂交通场景数据集，部署摄像头进行驾驶数据的采集与标注。改进 YOLOv11n 轻量化目标检测模型，并开发了基于视觉语义分割的路沿检测算法，实现了视障用户在复杂环境中的实时安全路径规划与自主避障，为智能移动机器人的环境感知提供了技术方案。
       </p>
     </section>
 
     <section class="section">
-      <h2 class="section-title">Visual Showcase</h2>
+      <h2 class="section-title" data-i18n="p2.showcase">成果展示</h2>
 
       <div class="media-category">
-        <h3 class="media-category-title">Carla Simulation Scenes</h3>
+        <h3 class="media-category-title" data-i18n="p2.sec1">Carla 仿真场景</h3>
         <div class="media-grid col-3">
           <img src="数据/carla/Carla仿真.jpg" alt="Carla Simulation" loading="lazy" onclick="openLightbox(this.src)">
           <img src="数据/carla/Carla仿真2.jpg" alt="Carla Simulation 2" loading="lazy" onclick="openLightbox(this.src)">
@@ -56,7 +57,7 @@
       </div>
 
       <div class="media-category">
-        <h3 class="media-category-title">Obstacle Avoidance Demo</h3>
+        <h3 class="media-category-title" data-i18n="p2.sec2">避障演示</h3>
         <div class="media-grid">
           <video src="数据/carla/避障-.mp4" controls preload="none" muted poster="数据/carla/Carla仿真.jpg"></video>
         </div>
@@ -69,7 +70,7 @@
     </div>
 
     <footer class="footer">
-      <p>&copy; 2026 Weihao Han. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 韩惟皓 版权所有</p>
     </footer>
 
   </div>
@@ -83,5 +84,6 @@
       document.getElementById('lightbox').classList.remove('active');
     }
   </script>
+  <script src="i18n.js"></script>
 </body>
 </html>
