@@ -23,8 +23,8 @@
     'index.title': { zh: '韩惟皓 | 个人主页', en: 'Weihao Han | Homepage' },
     'index.about': { zh: '关于我', en: 'About' },
     'index.about.text': {
-      zh: '我是韩惟皓，现于苏州科技大学攻读光学工程工学硕士学位，并在 Maxinsights 担任光学实习生。研究方向为智能人机交互、多模态感知融合与数字孪生，对将光学仿真和三维视觉技术与柔性电子传感器相结合以实现视觉-触觉融合感知尤感兴趣。',
-      en: 'I am Weihao Han, currently pursuing an M.Eng. in Optical Engineering at Suzhou University of Science and Technology and working as an Optics Intern at Maxinsights. My research interests lie in intelligent human-computer interaction, multimodal perception fusion, and digital twins. I am particularly passionate about integrating optical simulation and 3D vision technologies with flexible electronic sensors to advance visual-tactile fusion perception.'
+      zh: '我是韩惟皓，现于苏州科技大学攻读光学工程工学硕士学位，曾在 Maxinsights 担任光学实习生。研究方向为智能人机交互、多模态感知融合与数字孪生，对将光学仿真和三维视觉技术与柔性电子传感器相结合以实现视觉-触觉融合感知尤感兴趣。',
+      en: 'I am Weihao Han, currently pursuing an M.Eng. in Optical Engineering at Suzhou University of Science and Technology and previously worked as an Optics Intern at Maxinsights. My research interests lie in intelligent human-computer interaction, multimodal perception fusion, and digital twins. I am particularly passionate about integrating optical simulation and 3D vision technologies with flexible electronic sensors to advance visual-tactile fusion perception.'
     },
     'index.dob':       { zh: '出生日期',     en: 'Date of Birth' },
     'index.dob.val':   { zh: '2000年10月',   en: 'October 2000' },
