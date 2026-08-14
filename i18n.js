@@ -115,6 +115,8 @@
     'p1.sec1.sub1':{ zh: 'FOV 方锥', en: 'FOV Rectangular Frustum' },
     'p1.sec1.sub2':{ zh: '大 FOV 圆锥', en: 'Wide FOV Conical Frustum' },
     'p1.sec2':     { zh: '鱼眼镜头畸变', en: 'Fisheye Lens Distortion' },
+    'p1.sec3':     { zh: '红外及轨迹仿真', en: 'Infrared & Trajectory Simulation' },
+    'p1.sec3.caption': { zh: '输出设备插槽坐标以及四元数', en: 'Output device slot coordinates and quaternion' },
 
     // ═══════════ project-2.html (CARLA) ═══════════
     'p2.title':   { zh: '基于 CARLA 的视障辅助算法研究 | 韩惟皓', en: 'Research on Visually Impaired Assistance Algorithms Based on CARLA | Weihao Han' },
