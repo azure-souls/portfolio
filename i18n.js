@@ -80,11 +80,11 @@
     'proj.heading':    { zh: '项目经历',           en: 'Projects' },
 
     'proj.1.title':    { zh: 'Maxinsights · 光学实习生', en: 'Maxinsights · Optics Intern' },
-    'proj.1.time':     { zh: '2026.04 – 至今',          en: '2026.04 – Present' },
+    'proj.1.time':     { zh: '2026.04 – 2026.08',       en: '2026.04 – 2026.08' },
     'proj.1.role':     { zh: '高精度视锥仿真平台与鱼眼镜头标定', en: 'High-Precision Frustum Simulation Platform & Fisheye Lens Calibration' },
     'proj.1.detail.1': { zh: '基于 UE5 构建高保真视锥仿真平台，集成 MetaHuman 骨骼绑定，实现多相机阵列的全场光线采样与准确 FOV 复现', en: 'Built a high-fidelity UE5-based frustum simulation platform with MetaHuman skeletal rigging, capturing full-field light sampling across multi-camera arrays with accurate FOV reproduction.' },
-    'proj.1.detail.2': { zh: '采用双球面畸变模型标定鱼眼镜头，将重投影误差控制在 0.5 像素以内', en: 'Calibrated fisheye lenses using a dual-spherical distortion model, achieving a reprojection error within 0.5 pixels.' },
-    'proj.1.detail.3': { zh: '分析并追溯了设备标定过程中出现的成像异常根源', en: 'Analyzed and traced root causes of imaging anomalies encountered during device calibration.' },
+    'proj.1.detail.2': { zh: '仿真红外光源，输出长短帧图像以及设备 pose 的四元数和空间坐标，经算法完成轨迹预测可实现后续全仿真训练', en: 'Simulated infrared light sources to output long/short-exposure frame images together with the device pose\'s quaternion and spatial coordinates, enabling trajectory prediction through algorithms for subsequent full-simulation training.' },
+    'proj.1.detail.3': { zh: '采用双球面畸变模型标定鱼眼镜头，将重投影误差控制在 0.5 像素以内', en: 'Calibrated fisheye lenses using a dual-spherical distortion model, achieving a reprojection error within 0.5 pixels.' },
 
     'proj.2.title':    { zh: '基于 CARLA 的视障辅助算法研究', en: 'Research on Visually Impaired Assistance Algorithms Based on CARLA' },
     'proj.2.time':     { zh: '2025', en: '2025' },
@@ -104,11 +104,11 @@
     // ═══════════ project-1.html (Maxinsights) ═══════════
     'p1.title':    { zh: 'Maxinsights 光学实习生 | 韩惟皓', en: 'Maxinsights Optics Intern | Weihao Han' },
     'p1.heading':  { zh: 'Maxinsights · 光学实习生', en: 'Maxinsights · Optics Intern' },
-    'p1.subtitle': { zh: '高精度视锥仿真平台与鱼眼镜头标定 · 2026.04 – 至今', en: 'High-Precision Frustum Simulation Platform & Fisheye Lens Calibration · 2026.04 – Present' },
+    'p1.subtitle': { zh: '高精度视锥仿真平台与鱼眼镜头标定 · 2026.04 – 2026.08', en: 'High-Precision Frustum Simulation Platform & Fisheye Lens Calibration · 2026.04 – 2026.08' },
     'p1.overview': { zh: '概述', en: 'Overview' },
     'p1.overview.text': {
-      zh: '基于 UE5 引擎构建高精度视锥仿真平台，完成三维设备模型集成、MetaHuman 骨骼绑定与运动驱动，实现了多相机阵列下的全场光学采样和准确 FOV 复现，解决了传统仿真中光锥覆盖范围与人体运动的不匹配问题。采用双球面畸变模型对公司选定的鱼眼镜头进行标定，将重投影误差降至 0.5 像素以内；并在 UE5 中搭建基于标定参数的畸变还原管线，实现了镜头畸变的真实复现，为镜头优化与三维重建精度提升提供了关键数据支撑。此外，还分析并追溯了设备标定过程中遇到的成像异常根源。',
-      en: 'Built a high-precision frustum simulation platform using the UE5 engine, completing 3D device model integration, MetaHuman skeletal rigging, and motion driving, achieving full-field optical sampling and accurate FOV reproduction under multi-camera arrays. This resolved the traditional mismatch between light cone coverage and human motion in simulations. Calibrated company-selected fisheye lenses using a dual-spherical distortion model, reducing reprojection error to within 0.5 pixels. Implemented a UE5-based restoration pipeline that faithfully reproduces lens distortion based on calibrated parameters, providing critical data support for lens optimization and improved 3D reconstruction accuracy. Additionally, analyzed and traced root causes of imaging anomalies encountered during device calibration.'
+      zh: '基于 UE5 引擎构建高精度视锥仿真平台，完成三维设备模型集成、MetaHuman 骨骼绑定与运动驱动，实现了多相机阵列下的全场光学采样和准确 FOV 复现，解决了传统仿真中光锥覆盖范围与人体运动的不匹配问题。并仿真红外光源，输出长短帧图像以及设备 pose 的四元数和空间坐标，经算法完成轨迹预测可实现后续全仿真训练。采用双球面畸变模型对公司选定的鱼眼镜头进行标定，将重投影误差降至 0.5 像素以内；并在 UE5 中搭建基于标定参数的畸变还原管线，实现了镜头畸变的真实复现，为镜头优化与三维重建精度提升提供了关键数据支撑。',
+      en: 'Built a high-precision frustum simulation platform using the UE5 engine, completing 3D device model integration, MetaHuman skeletal rigging, and motion driving, achieving full-field optical sampling and accurate FOV reproduction under multi-camera arrays. This resolved the traditional mismatch between light cone coverage and human motion in simulations. Simulated infrared light sources to output long/short-exposure frame images together with the device pose\'s quaternion and spatial coordinates, enabling trajectory prediction through algorithms for subsequent full-simulation training. Calibrated company-selected fisheye lenses using a dual-spherical distortion model, reducing reprojection error to within 0.5 pixels. Implemented a UE5-based restoration pipeline based on calibrated parameters to faithfully reproduce lens distortion, providing critical data support for lens optimization and improved 3D reconstruction accuracy.'
     },
     'p1.showcase': { zh: '成果展示', en: 'Visual Showcase' },
     'p1.sec1':     { zh: '视锥仿真', en: 'Frustum Simulation' },
